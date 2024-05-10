@@ -1,0 +1,158 @@
+/* Estilos Base */
+/* Estilos Base */
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333333;
+    color: white;
+    padding: 2em;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+h1 {
+    margin: 0;
+    white-space: nowrap;  /* Asegura que el título no se envuelva en múltiples líneas */
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    margin-left: 10px;  /* Añade espacio entre los iconos */
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.profile-photo {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+section {
+    background-color: #f0f0f0;
+    color: #333333;
+    padding: 20px;
+    margin: 0;
+    max-width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.experience-box {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.experience-box img {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.experience-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experience-box p {
+    padding: 8px;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: white;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Estilos para Tabletas */
+/*----------------------------------*/
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .experience-container {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta las columnas para tabletas */
+    }
+    .profile-photo {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para Dispositivos Móviles */
+/*----------------------------------*/
+@media (max-width: 480px) {
+    .header-content {
+        padding: 0.5em; /* Reduce el padding para aprovechar mejor el espacio */
+    }
+
+    h1 {
+        font-size: 16px; /* Ajusta aún más el tamaño de la fuente */
+    }
+
+    .social-links a {
+        margin-left: 5px; /* Reduce el espaciado entre íconos */
+    }
+
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+    .profile-photo {
+        max-width: 100%;
+    }
+}
