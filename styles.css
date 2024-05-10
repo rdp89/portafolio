@@ -59,6 +59,19 @@ section {
     text-align: center;
 }
 
+#about .intro {
+    background-image: url('pics/papel-arrugado.jpg'); /* Ajusta la ruta según donde tengas la imagen */
+    background-size: cover; /* Cubre completamente el área de los párrafos, manteniendo las proporciones */
+    color: #333; /* Color del texto, asegúrate de que sea legible sobre el fondo */
+    padding: 20px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    margin: 20px auto; /* Margen para separar de otros elementos, centrado horizontalmente */
+    width: 80%; /* Ancho controlado para no ocupar toda la página */
+    max-width: 640px; /* Añade un máximo para evitar que sea demasiado ancho en pantallas grandes */
+    text-align: center; /* Alinea el texto al centro */
+}
+
 .experience-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
