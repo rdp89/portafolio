@@ -131,6 +131,34 @@ section {
     50% { opacity: 0; }
 }
 
+#experience h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.full-width-experience-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.full-width-experience-box img {
+    width: 20%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px; /* Añade bordes redondeados */
+}
+
+.experience-content {
+    width: 45%;
+    text-align: left;
+}
+
 /* Estilos para Tabletas */
 /*----------------------------------*/
 @media (max-width: 768px) {
@@ -155,6 +183,21 @@ section {
     }
     .profile-photo {
         max-width: 100%;
+    }
+    
+    .full-width-experience-box {
+        flex-direction: column;
+    }
+    
+    .full-width-experience-box img {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    
+    .experience-content {
+        width: 100%;
+        text-align: center;
     }
 }
 
