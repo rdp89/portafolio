@@ -72,6 +72,17 @@ section {
     text-align: center; /* Alinea el texto al centro */
 }
 
+#about h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #333; /* Color oscuro para el texto, ajusta según tu paleta de colores */
+    font-family: 'Ubuntu Mono', monospace; /* Manteniendo la coherencia con el cuerpo de la página */
+    padding-top: 20px; /* Espacio en la parte superior */
+    margin-top: 0; /* Elimina el margen superior por defecto */
+    margin-bottom: 20px; /* Espacio antes de la imagen */
+    font-size: 24px; /* Tamaño de fuente grande para destacar */
+    letter-spacing: 1px; /* Espaciado entre letras para mejorar la legibilidad */
+}
+
 .experience-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
