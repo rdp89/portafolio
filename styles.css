@@ -60,7 +60,7 @@ section {
 }
 
 #about .intro {
-    background-image: url('pics/papel-arrugado.jpg'); /* Ajusta la ruta según donde tengas la imagen */
+    background-color: #ffffff; /* Ajusta la ruta según donde tengas la imagen */
     background-size: cover; /* Cubre completamente el área de los párrafos, manteniendo las proporciones */
     color: #333; /* Color del texto, asegúrate de que sea legible sobre el fondo */
     padding: 20px; /* Espacio alrededor del texto */
