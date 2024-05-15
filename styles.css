@@ -4,12 +4,12 @@ body {
     font-family: 'Ubuntu Mono', monospace;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #333333; /* Modificado a un fondo oscuro */
+    color: #ffffff; /* Texto en blanco para contraste */
 }
 
 header {
-    background-color: #333333;
+    background-color: #333333; /* Consistente con el fondo del body */
     color: white;
     padding: 2em;
 }
@@ -23,7 +23,7 @@ header {
 
 h1 {
     margin: 0;
-    white-space: nowrap;  /* Asegura que el título no se envuelva en múltiples líneas */
+    white-space: nowrap;
 }
 
 .social-links {
@@ -31,7 +31,7 @@ h1 {
 }
 
 .social-links a {
-    margin-left: 10px;  /* Añade espacio entre los iconos */
+    margin-left: 10px;
 }
 
 .social-links img {
@@ -41,46 +41,43 @@ h1 {
 }
 
 .profile-photo {
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Sombra más clara para resaltar en fondo oscuro */
 }
 
 section {
-    background-color: #f0f0f0;
-    color: #333333;
-    padding: 20px;
+    background-color: #333333; /* Fondo oscuro para todas las secciones */
+    color: #ffffff; /* Texto en blanco para contraste */
+    padding: 0;
     margin: 0;
     max-width: 100%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
     text-align: center;
 }
 
 #about .intro {
-    background-color: #ffffff; /* Ajusta la ruta según donde tengas la imagen */
-    background-size: cover; /* Cubre completamente el área de los párrafos, manteniendo las proporciones */
-    color: #333; /* Color del texto, asegúrate de que sea legible sobre el fondo */
-    padding: 20px; /* Espacio alrededor del texto */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-    margin: 20px auto; /* Margen para separar de otros elementos, centrado horizontalmente */
-    width: 80%; /* Ancho controlado para no ocupar toda la página */
-    max-width: 640px; /* Añade un máximo para evitar que sea demasiado ancho en pantallas grandes */
-    text-align: center; /* Alinea el texto al centro */
+    background-color: rgb(119, 119, 119); /* Un poco más claro que el fondo general para diferenciar */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 640px;
+    text-align: center;
 }
 
-#about h2 {
-    text-align: center; /* Centra el texto horizontalmente */
-    color: #333; /* Color oscuro para el texto, ajusta según tu paleta de colores */
-    font-family: 'Ubuntu Mono', monospace; /* Manteniendo la coherencia con el cuerpo de la página */
-    padding-top: 20px; /* Espacio en la parte superior */
-    margin-top: 0; /* Elimina el margen superior por defecto */
-    margin-bottom: 20px; /* Espacio antes de la imagen */
-    font-size: 24px; /* Tamaño de fuente grande para destacar */
-    letter-spacing: 1px; /* Espaciado entre letras para mejorar la legibilidad */
+#about h2, #experience h2 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Ubuntu Mono', monospace;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
 .experience-container {
@@ -88,15 +85,14 @@ section {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
-    max-width: 100%;
     margin: auto;
 }
 
 .experience-box {
-    background-color: white;
-    color: #333;
+    background-color: rgb(119, 119, 119);
+    color: #ffffff;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -131,27 +127,21 @@ section {
     50% { opacity: 0; }
 }
 
-#experience h2 {
-    text-align: center;
-    color: #333;
-    margin-top: 40px;
-    font-size: 24px;
-}
-
 .full-width-experience-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    background-color: rgb(119, 119, 119);
 }
 
 .full-width-experience-box img {
     width: 20%;
     height: auto;
     margin-left: 20px;
-    border-radius: 10px; /* Añade bordes redondeados */
+    border-radius: 10px;
 }
 
 .experience-content {
@@ -159,8 +149,6 @@ section {
     text-align: left;
 }
 
-/* Estilos para Tabletas */
-/*----------------------------------*/
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -175,16 +163,12 @@ section {
 
     .social-links {
         justify-content: center;
-        max-width: 100%;
     }
 
     .experience-container {
-        grid-template-columns: repeat(2, 1fr); /* Ajusta las columnas para tabletas */
+        grid-template-columns: repeat(2, 1fr);
     }
-    .profile-photo {
-        max-width: 100%;
-    }
-    
+
     .full-width-experience-box {
         flex-direction: column;
     }
@@ -201,25 +185,20 @@ section {
     }
 }
 
-/* Estilos para Dispositivos Móviles */
-/*----------------------------------*/
 @media (max-width: 480px) {
     .header-content {
-        padding: 0.5em; /* Reduce el padding para aprovechar mejor el espacio */
+        padding: 0.5em;
     }
 
     h1 {
-        font-size: 16px; /* Ajusta aún más el tamaño de la fuente */
+        font-size: 16px;
     }
 
     .social-links a {
-        margin-left: 5px; /* Reduce el espaciado entre íconos */
+        margin-left: 5px;
     }
 
     .experience-container {
         grid-template-columns: 1fr;
-    }
-    .profile-photo {
-        max-width: 100%;
     }
 }
