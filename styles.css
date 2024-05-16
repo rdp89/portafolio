@@ -1,5 +1,4 @@
 /* Estilos Base */
-/* Estilos Base */
 body {
     font-family: 'Ubuntu Mono', monospace;
     margin: 0;
@@ -64,9 +63,10 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     margin: 20px auto;
-    width: 80%;
-    max-width: 640px;
+    /*width: 100%;*/
+    max-width: 1000px;
     text-align: center;
+    font-size: 21px;
 }
 
 #about h2, #experience h2 {
@@ -79,6 +79,15 @@ section {
     font-size: 24px;
     letter-spacing: 1px;
 }
+
+#experience {
+    background-color: #333333; /* Fondo oscuro para todas las secciones */
+    color: #ffffff; /* Texto en blanco para contraste */
+    padding: 40px 20px; /* Margen horizontal */
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+  }
 
 .experience-container {
     display: grid;
@@ -132,10 +141,11 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    margin: 20px 0;
+    margin: 30px 20px; /* Margen vertical */
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     background-color: rgb(119, 119, 119);
-}
+    border-radius: 15px;
+  }
 
 .full-width-experience-box img {
     width: 20%;
@@ -149,6 +159,7 @@ section {
     text-align: left;
 }
 
+/* Tablets */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -184,6 +195,8 @@ section {
         text-align: center;
     }
 }
+
+/* Móviles */
 
 @media (max-width: 480px) {
     .header-content {
