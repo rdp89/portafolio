@@ -27,6 +27,7 @@ h1 {
 
 .social-links {
     display: flex;
+    align-items: center; /* Alinea los elementos del menú verticalmente en el centro */
 }
 
 .social-links a {
@@ -37,6 +38,32 @@ h1 {
     width: 30px;
     height: 30px;
     display: block;
+}
+
+.main-menu {
+    margin-left: 20px;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Alinea los elementos del menú verticalmente en el centro */
+}
+
+.main-menu li {
+    margin-left: 20px;
+}
+
+.main-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-menu a:hover {
+    text-decoration: underline;
 }
 
 .profile-photo {
@@ -171,6 +198,41 @@ section {
     text-align: left;
 }
 
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top-style: solid;
+    border-color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer-content .social-links {
+    display: flex;
+}
+
+.footer-content .social-links a {
+    margin: 0 10px;
+}
+
+.footer-content .social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px; /* Añade esta línea para redondear los bordes */
+}
+
 /* Tablets */
 @media (max-width: 768px) {
     .header-content {
@@ -186,6 +248,20 @@ section {
 
     .social-links {
         justify-content: center;
+    }
+
+    .main-menu {
+        margin-top: 10px;
+    }
+
+    .main-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-menu li {
+        margin-left: 0;
+        margin-top: 10px;
     }
 
     .experience-container {
@@ -206,6 +282,13 @@ section {
         width: 100%;
         text-align: center;
     }
+    .footer-content p {
+        font-size: 14px;
+    }
+
+    .footer-content .social-links a {
+        margin: 0 5px;
+    }
 }
 
 /* Móviles */
@@ -213,6 +296,10 @@ section {
 @media (max-width: 480px) {
     .header-content {
         padding: 0.5em;
+    }
+
+    .main-menu a {
+        font-size: 14px;
     }
 
     h1 {
@@ -225,5 +312,12 @@ section {
 
     .experience-container {
         grid-template-columns: 1fr;
+    }
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .footer-content .social-links a {
+        margin: 0 3px;
     }
 }
