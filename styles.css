@@ -1,339 +1,225 @@
-/* Estilos Base */
-body {
-    font-family: 'Ubuntu Mono', monospace;
+/* styles2.css */
+
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+/* Reseteo de márgenes y paddings */
+* {
     margin: 0;
     padding: 0;
-    background-color: #333333; /* Modificado a un fondo oscuro */
-    color: #ffffff; /* Texto en blanco para contraste */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333333; /* Consistente con el fondo del body */
-    color: white;
-    padding: 2em;
+    background-color: #282c34;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
+.header-content h1 {
+    font-size: 2em;
+    color: #61dafb;
 }
 
-h1 {
-    margin: 0;
-    white-space: nowrap;
+.cursor {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
 }
 
 .social-links {
-    display: flex;
-    align-items: center; /* Alinea los elementos del menú verticalmente en el centro */
+    margin: 20px 0;
 }
 
 .social-links a {
-    margin-left: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 10px;
+    display: inline-block;
 }
 
 .social-links img {
-    width: 50px;
-    height: 50px;
-    display: block;
-    border-radius: 5%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.social-links a:hover img {
-    transform: scale(1.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.main-menu {
-    margin-left: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .main-menu ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
 }
 
 .main-menu ul li {
-    margin-left: 20px;
-    position: relative;
+    display: inline;
+    margin: 0 15px;
 }
 
 .main-menu ul li a {
+    color: #61dafb;
     text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .main-menu ul li a:hover {
-    background-color: #ffffff;
-    color: #333333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #21a1f1;
+}
+
+section#about {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .profile-photo {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 150px;
+    border-radius: 50%;
     margin: 0 auto 20px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Sombra más clara para resaltar en fondo oscuro */
 }
 
-section {
-    background-color: rgb(39, 39, 39); /* Fondo oscuro para todas las secciones */
-    color: #ffffff; /* Texto en blanco para contraste */
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-    text-align: center;
-}
-
-#about .intro {
-    background-color: rgb(39, 39, 39); /* Un poco más claro que el fondo general para diferenciar */
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    /*box-shadow: 0 14px 18px rgba(255, 255, 255, 0.2);*/
-    margin: 20px auto;
-    /*width: 100%;*/
-    max-width: 1400px;
-    text-align: center;
-    font-size: 28px;
-}
-
-#about h2, #experience h2 {
-    text-align: center;
-    color: #fff;
-    font-family: 'Ubuntu Mono', monospace;
-    padding-top: 20px;
-    margin-top: 0;
+h2 {
+    font-size: 1.8em;
     margin-bottom: 20px;
-    font-size: 38px;
-    letter-spacing: 1px;
+    color: #61dafb;
 }
 
-.work-in-progress {
-    border-radius: 5%;
+.intro {
+    margin-bottom: 30px;
 }
-
-#experience {
-    background-color: rgb(39, 39, 39); /* Fondo oscuro para todas las secciones */
-    color: #ffffff; /* Texto en blanco para contraste */
-    padding: 40px 20px; /* Margen horizontal */
-    margin: 0;
-    max-width: 100%;
-    text-align: center;
-  }
 
 .experience-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .experience-box {
-    background-color: rgb(39, 39, 39);
-    color: #ffffff;
-    padding: 10px;
-    /*box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);*/
+    background-color: #2e2e2e;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
     text-align: center;
-    border-style: solid;
-    border-color: white;
+    transition: transform 0.3s;
+}
+
+.experience-box:hover {
+    transform: translateY(-10px);
 }
 
 .experience-box img {
-    max-width: 25%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
 }
 
 .experience-title {
-    font-weight: bold;
+    font-size: 1.2em;
     margin-bottom: 10px;
-    font-size: 28px;
+    color: #21a1f1;
 }
 
-.experience-box p {
-    padding: 8px;
-    font-size: 20px;
-}
-
-.cursor {
-    display: inline-block;
-    background-color: white;
-    animation: blink 1s step-start infinite;
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+section#experience {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .full-width-experience-box {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 30px 30px; /* Margen vertical */
-    /*box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);*/
-    background-color: rgb(39,39,39);
-    border-radius: 15px;
-    border-style: solid;
-    border-color: white;
-    font-size: 25px;
-  }
-
-  .intro-experience {
-    font-weight: bold;
-    font-size: 40px;
-  }
-
-.full-width-experience-box img {
-    width: 20%;
-    height: auto;
-    margin-left: 20px;
+    flex-wrap: wrap;
+    background-color: #2e2e2e;
     border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    justify-content: center; /* Alinea los contenidos al centro */
 }
 
 .experience-content {
-    width: 45%;
-    text-align: left;
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.full-width-experience-box img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    align-self: center; /* Alinea las imágenes al centro */
 }
 
 footer {
-    background-color: #333333;
-    color: white;
+    background-color: #282c34;
     padding: 20px 0;
     text-align: center;
-    border-top-style: solid;
-    border-color: white;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .footer-content p {
-    margin: 10px 0;
-    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .footer-content .social-links {
-    display: flex;
+    margin-top: 10px;
 }
 
 .footer-content .social-links a {
     margin: 0 10px;
 }
 
-.footer-content .social-links img {
-    width: 30px;
-    height: 30px;
-    border-radius: 8px; /* Añade esta línea para redondear los bordes */
+/* Nuevos estilos para listas */
+ul, ol {
+    padding-left: 20px;  /* Ajusta este valor para controlar el espacio entre el punto y el texto */
 }
 
-/* Tablets */
+ul li, ol li {
+    padding-left: 0;  /* Elimina cualquier padding adicional en los elementos de lista */
+    margin-left: 0;   /* Elimina cualquier margen adicional en los elementos de lista */
+    margin-bottom: 10px; /* Añade espaciado entre los elementos de la lista */
+}
+
+/* Ajustes para móviles */
 @media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    h1 {
-        margin-bottom: 10px;
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-
-    .main-menu {
-        margin-top: 10px;
-    }
-
-    .main-menu ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-menu li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .experience-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .full-width-experience-box {
-        flex-direction: column;
-    }
-    
-    .full-width-experience-box img {
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0;
-    }
-    
-    .experience-content {
-        width: 100%;
-        text-align: center;
-    }
-    .footer-content p {
-        font-size: 14px;
+        flex-direction: column; /* Cambia la dirección de flex a columna */
+        align-items: center; /* Alinea los contenidos al centro */
     }
 
-    .footer-content .social-links a {
-        margin: 0 5px;
+    .full-width-experience-box img {
+        margin-bottom: 20px; /* Añade margen inferior a las imágenes */
     }
 }
+/* Nuevo estilo para los párrafos con clase .intro-experience */
+.intro-experience {
+    font-size: 1.4em; /* Ajusta el tamaño del texto */
+    text-align: center;
+}
+/* Estilos para la imagen */
+.work-in-progress {
+    width: 70%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    display: block; /* Para asegurar que no haya espacios innecesarios alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Limita el tamaño máximo de la imagen al ancho del contenedor */
+}
 
-/* Móviles */
-
-@media (max-width: 480px) {
-    .header-content {
-        padding: 0.5em;
-    }
-
-    .main-menu a {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 16px;
-    }
-
-    .social-links a {
-        margin-left: 5px;
-    }
-
-    .experience-container {
-        grid-template-columns: 1fr;
-    }
-    .footer-content p {
-        font-size: 12px;
-    }
-
-    .footer-content .social-links a {
-        margin: 0 3px;
-    }
+/* Estilos para la foto de perfil */
+.profile-photo {
+    width: 20%;
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    display: block; /* Para asegurar que no haya espacios innecesarios alrededor de la foto */
+    margin: 0 auto; /* Centra la foto de perfil horizontalmente */
+    max-width: 100%; /* Limita el tamaño máximo de la foto de perfil al ancho del contenedor */
 }
