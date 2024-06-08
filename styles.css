@@ -47,8 +47,8 @@ header {
 }
 
 .social-links img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 
 .main-menu ul {
@@ -59,6 +59,9 @@ header {
 .main-menu ul li {
     display: inline;
     margin: 0 15px;
+    background-color: #2e2e2e;
+    padding: 5px;
+    border-radius: 10%;
 }
 
 .main-menu ul li a {
@@ -222,4 +225,26 @@ ul li, ol li {
     display: block; /* Para asegurar que no haya espacios innecesarios alrededor de la foto */
     margin: 0 auto; /* Centra la foto de perfil horizontalmente */
     max-width: 100%; /* Limita el tamaño máximo de la foto de perfil al ancho del contenedor */
+}
+
+.language-selector {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.language-selector a {
+    margin: 0 10px;
+}
+
+.flag {
+    width: 30px; /* Ajusta el tamaño según tus preferencias */
+    height: auto;
+    border-radius: 15%; /* Esto crea un efecto redondeado en las imágenes de la bandera */
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease; /* Agrega una transición suave al cambiar el color del borde */
+}
+
+.flag:hover {
+    border-color: #333; /* Cambia el color del borde al pasar el mouse sobre la bandera */
 }
