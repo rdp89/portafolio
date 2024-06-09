@@ -1,0 +1,14 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://rafadp.es/index.html</loc>
+      <lastmod>2023-06-08</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>https://rafadp.es/projects.html</loc>
+      <lastmod>2023-06-08</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+</urlset>
