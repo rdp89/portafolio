@@ -249,3 +249,42 @@ ul li, ol li {
 .flag:hover {
     border-color: #333; /* Cambia el color del borde al pasar el mouse sobre la bandera */
 }
+#cookie-notice {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cookie-notice p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#cookie-notice a {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+#cookie-notice button {
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#cookie-notice button:hover {
+    background-color: #FFC107;
+}

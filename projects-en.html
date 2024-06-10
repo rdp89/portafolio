@@ -48,5 +48,21 @@
             <p>&copy;2024 Rafa Delgado. All rights reserved.</p>
         </div>
     </footer>
+    <div id="cookie-notice">
+        <p>This website uses essential cookies for its operation. No personal information is collected. <a href="politica-privacidad-en.html">More information</a>.</p>
+        <button onclick="acceptCookies()">Allow</button>
+    </div>
+    <script>
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookie-notice').style.display = 'none';
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('cookiesAccepted') === 'true') {
+                document.getElementById('cookie-notice').style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
