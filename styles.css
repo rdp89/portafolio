@@ -28,6 +28,12 @@ header {
     color: #61dafb;
 }
 
+a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;   
+}
 .cursor {
     animation: blink 1s step-end infinite;
 }
